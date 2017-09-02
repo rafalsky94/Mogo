@@ -1,0 +1,2 @@
+# Mogo
+cięcie strony Mogo
