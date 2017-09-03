@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*nawigacja*/
+
+
+.navbar {
+    background-color: transparent;
+    position: absolute;
+    width: 100%;
+
+}
+
+#banner {
+    height: 1000px;
+    background: 
+        linear-gradient( 
+            rgba(255,92,92,0.85) ,
+            rgba(254,144,144,0.85) ,
+            rgba(249, 252, 141,0.85)
+        ), url("../images/banner-background.png") no-repeat;
+    
+    background: 
+        -moz-linear-gradient( 
+            rgba(255,92,92,0.85) ,
+            rgba(254,144,144,0.85) ,
+            rgba(249, 252, 141,0.85)
+        ), url("../images/banner-background.png") no-repeat;
+
+    background: 
+        -webkit-linear-gradient( 
+            rgba(255,92,92,0.85) ,
+            rgba(254,144,144,0.85) ,
+            rgba(249, 252, 141,0.85)
+        ), url("../images/banner-background.png") no-repeat;
+
+    background-size: cover;
+    background-position: center;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: inherit;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
