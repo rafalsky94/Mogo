@@ -1,6 +1,6 @@
 # Mogo
 cięcie strony Mogo
 
-#Live
+# Live
 
 https://rafalsky94.github.io/Mogo/
