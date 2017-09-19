@@ -1,1 +1,26 @@
-$desktop-up: "screen and (min-width: 1200px)"
+$desktop-up: "screen and (min-width: 1200px)";
+
+@mixin gradient {
+background: 
+    linear-gradient( 
+        rgba(255,92,92,0.85) ,
+        rgba(254,144,144,0.85) ,
+        rgba(249, 252, 141,0.85)
+    ), url("../images/banner-background.png") no-repeat;
+
+background: 
+    -moz-linear-gradient( 
+        rgba(255,92,92,0.85) ,
+        rgba(254,144,144,0.85) ,
+        rgba(249, 252, 141,0.85)
+    ), url("../images/banner-background.png") no-repeat;
+
+background: 
+    -webkit-linear-gradient( 
+        rgba(255,92,92,0.85) ,
+        rgba(254,144,144,0.85) ,
+        rgba(249, 252, 141,0.85)
+    ), url("../images/banner-background.png") no-repeat;
+
+
+}
