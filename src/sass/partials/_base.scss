@@ -1,26 +1,32 @@
 $desktop-up: "screen and (min-width: 1200px)";
 
-@mixin gradient {
+@mixin gradient($image) {
 background: 
     linear-gradient( 
         rgba(255,92,92,0.85) ,
         rgba(254,144,144,0.85) ,
         rgba(249, 252, 141,0.85)
-    ), url("../images/banner-background.png") no-repeat;
+    ), url($image) no-repeat;
 
 background: 
     -moz-linear-gradient( 
         rgba(255,92,92,0.85) ,
         rgba(254,144,144,0.85) ,
         rgba(249, 252, 141,0.85)
-    ), url("../images/banner-background.png") no-repeat;
+    ), url($image) no-repeat;
 
 background: 
     -webkit-linear-gradient( 
         rgba(255,92,92,0.85) ,
         rgba(254,144,144,0.85) ,
         rgba(249, 252, 141,0.85)
-    ), url("../images/banner-background.png") no-repeat;
+    ), url($image) no-repeat;
 
 
+}
+
+@mixin box-shadow {
+    -webkit-box-shadow: 10px 10px 0px 0px rgba(149,225,211,1);
+    -moz-box-shadow: 10px 10px 0px 0px rgba(149,225,211,1);
+    box-shadow: 10px 10px 0px 0px rgba(149,225,211,1);
 }

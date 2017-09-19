@@ -31,7 +31,7 @@ body {
 #banner {
     padding-bottom: 45px;
     height: 1000px;
-    @include gradient;
+    @include gradient("../images/banner-background.png");
     background-size: cover;
     background-position: center;
 }
@@ -108,12 +108,40 @@ body {
         flex-wrap: wrap;
         justify-content: center;
         padding: 40px 0;
+        
 
-        .image {
-            padding: 5px 0;
+        .image-1 {
+            background: url('../images/what-we-do/first-image.png');
+            &:hover {
+                @include gradient('../images/what-we-do/first-image.png');
+            }
+        }
+
+        .image-2 {
+            background: url('../images/what-we-do/second-image.png');
+            &:hover {
+                @include gradient('../images/what-we-do/second-image.png');
+            }
+        }
+
+        .image-3 {
+            background: url('../images/what-we-do/third-image.png');
+            &:hover {
+                @include gradient('../images/what-we-do/third-image.png');
+            }
+        }
+
+        [class*="image-"] {
+            margin: 5px 0;
+            width: 320px;
+            height: 216px;
 
             @media #{$desktop-up} {
-                padding: 0 20px;
+                margin: 0 20px;
+            }
+
+            &:hover {
+                @include box-shadow;
             }
 
             img {
