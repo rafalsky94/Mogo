@@ -1,5 +1,4 @@
 @import 'partials/base';
-
 body {
     margin: 0;
     padding: 0;
@@ -8,12 +7,13 @@ body {
 
 .container {
     @media #{$desktop-up} {
+        padding: 0;
         width: 1200px;
     }
 }
 
-/*nawigacja*/
 
+/*nawigacja*/
 
 .navbar {
     background-color: transparent;
@@ -43,6 +43,7 @@ body {
     width: 100%;
     height: 100%;
 }
+
 .swiper-slide {
     text-align: center;
     font-size: 18px;
@@ -67,7 +68,7 @@ body {
     width: 20%;
     height: 20px;
     border-radius: 0;
-    color:#fff;
+    color: #fff;
     opacity: 1;
     background: transparent;
     border-top: 5px solid #fff;
@@ -84,73 +85,139 @@ body {
     border-top: 5px solid #f38181;
 }
 
+
 /* what-we-do */
 
 #what-we-do {
     text-align: center;
     padding-top: 45px;
     h2 {
-
+        
     }
-
     h3 {
         text-transform: uppercase;
         padding-top: 24px;
-
-        
     }
     hr {
         border-bottom: 5px solid #f38181;
         width: 60px;
         margin: 40px auto;
     }
-
     .what-we-do-images {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
         padding: 40px 0;
-        
-
         .image-1 {
             background: url('../images/what-we-do/first-image.png');
             &:hover {
                 @include gradient('../images/what-we-do/first-image.png');
             }
         }
-
         .image-2 {
             background: url('../images/what-we-do/second-image.png');
             &:hover {
                 @include gradient('../images/what-we-do/second-image.png');
             }
         }
-
         .image-3 {
             background: url('../images/what-we-do/third-image.png');
             &:hover {
                 @include gradient('../images/what-we-do/third-image.png');
             }
         }
-
         [class*="image-"] {
             margin: 5px 0;
             width: 320px;
             height: 216px;
-
             @media #{$desktop-up} {
                 margin: 0 20px;
             }
-
             &:hover {
                 @include box-shadow;
             }
-
             img {
                 width: 100%;
             }
         }
     }
+}
 
+
+/* counter */
+
+#counter {
+    background-color: rgba(149, 225, 211, 1);
+    @media #{$desktop-up} {
+        height: 270px;
+    }
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        div {
+            display: inline-block;
+            height: 270px;
+            width: 240px;
+            color: white;
+                border-bottom: 1px solid white;
+                border-top: 1px solid white;
+            @media #{$desktop-up} {
+                border-right: 1px solid white;
+                border-left: 1px solid white;
+            } 
+            h2 {
+                text-align: center;
+                padding-top: 35%;
+                font-size: 54px;
+                font-weight: bold;
+                margin-bottom: 30px;
+            }
+            span {
+                display: block;
+                text-align: center;
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+
+
+/* we-work-with */
+
+#we-work-with {
+    text-align: center;
+    padding-top: 45px;
+    h2 {
+        
+    }
+    h3 {
+        text-transform: uppercase;
+        padding-top: 24px;
+    }
+    hr {
+        border-bottom: 5px solid #f38181;
+        width: 60px;
+        margin: 40px auto;
+    }
+    .icons {
+        display: flex;
+        justify-content: space-between;
+        text-align: start;
+        flex-wrap: wrap;
+
+        [class*="icons-"] {
+            width: 30%;
+        }
+        h2 {
+            font-size: 12px;
+            text-transform: uppercase;
+        }
+        p {
+            font-size: 12px;
+        }
+     
+    }
 }
