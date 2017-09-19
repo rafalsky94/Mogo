@@ -1,9 +1,16 @@
+@import 'partials/base';
+
 body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+.container {
+    @media #{$desktop-up} {
+        width: 1200px;
+    }
+}
 
 /*nawigacja*/
 
@@ -13,9 +20,16 @@ body {
     position: absolute;
     width: 100%;
     z-index: 100;
+    @media #{$desktop-up} {
+        padding: 0 165px;
+    }
 }
 
+
+/* banner */
+
 #banner {
+    padding-bottom: 45px;
     height: 1000px;
     background: 
         linear-gradient( 
@@ -64,4 +78,45 @@ body {
     -ms-flex-align: center;
     -webkit-align-items: center;
     align-items: center;
+}
+
+.swiper-pagination-bullet {
+    width: 20%;
+    height: 20px;
+    line-height: 28px;
+    font-size: 24px;
+    border-radius: 0;
+    color:#fff;
+    opacity: 1;
+    background: transparent;
+    border-top: 5px solid #fff;
+    text-align: left;
+}
+
+.swiper-pagination-bullet-active {
+    color:#fff;
+    border-top: 5px solid #f38181;
+}
+
+/* what-we-do */
+
+#what-we-do {
+    text-align: center;
+    padding-top: 45px;
+    h2 {
+
+    }
+
+    h3 {
+        text-transform: uppercase;
+        padding-top: 24px;
+
+        
+    }
+    hr {
+        border-bottom: 5px solid #f38181;
+        width: 60px;
+        margin: 40px auto;
+    }
+
 }
