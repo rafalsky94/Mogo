@@ -10,21 +10,21 @@ let swiper = new Swiper('.swiper-container', {
 });
 
 
+// let secondSwiper = new Swiper('.second swiper .swiper-container', {
+//         nextButton: '.swiper-button-next',
+//         prevButton: '.swiper-button-prev'
+// });
+
+
 $(()=> {
-    $("a").on("click", (e) => {
-        $(e.target).css("text-decoration", "underline");
+    const textContent = $(".text-content");
+
+    textContent.find("p").hide();
+
+    textContent.find("h2").on("click", (e) => {;
+
+        $(e.target).next().toggle();
+        
     })
-
-
-
-
-
-
-
-
-
-
-
-
 
 });
