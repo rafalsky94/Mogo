@@ -56,6 +56,11 @@ body {
         }
         
     }
+    hr {
+        border-bottom: 5px solid white;
+        width: 60px;
+        margin: 40px auto; 
+    }
 }
 
 .swiper-container {
@@ -220,6 +225,7 @@ body {
     padding-top: 45px;
     h2 {
         font-family: 'kaushan', sans-serif;
+        display: inline-block;
     }
     h3 {
         font-family: 'montserratblack', sans-serif;
@@ -289,7 +295,10 @@ body {
             position: relative;
             display: inline-block;
             width: 70%;
-
+            margin-top: 21px;
+            @media #{$desktop-up} {
+                margin-top: 0;
+            }
         .tablet-image {
             display: inline-block;
 
@@ -364,6 +373,7 @@ body {
             }
             h2 {
                 cursor: pointer;
+                padding: 25px;
                 text-align: left;
                 font-size: 16px;
                 color: #333333;
