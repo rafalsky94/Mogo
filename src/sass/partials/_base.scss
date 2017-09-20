@@ -30,3 +30,28 @@ background:
     -moz-box-shadow: 10px 10px 0px 0px rgba(149,225,211,1);
     box-shadow: 10px 10px 0px 0px rgba(149,225,211,1);
 }
+
+@mixin grey-gradient($image) {
+    background: 
+        linear-gradient( 
+            rgba(255, 255, 255, 0.7),
+            rgba(255, 255, 255, 0.7),
+            rgba(255, 255, 255, 0.7)
+        ), url($image) no-repeat;
+    
+    background: 
+        -moz-linear-gradient( 
+            rgba(255, 255, 255, 0.7),
+            rgba(255, 255, 255, 0.7),
+            rgba(255, 255, 255, 0.7)
+        ), url($image) no-repeat;
+    
+    background: 
+        -webkit-linear-gradient( 
+            rgba(255, 255, 255, 0.7),
+            rgba(255, 255, 255, 0.7),
+            rgba(255, 255, 255, 0.7)
+        ), url($image) no-repeat;
+    
+    
+    }
