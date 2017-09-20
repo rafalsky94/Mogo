@@ -333,15 +333,16 @@ body {
 /* service */
 
 #service {
-    text-align: center;
     padding-top: 110px;
     h2 {
         font-family: 'kaushan', sans-serif;
+        text-align: center;
     }
     h3 {
         font-family: 'montserratblack', sans-serif;
         text-transform: uppercase;
         padding-top: 24px;
+        text-align: center;
     }
     hr {
         border-bottom: 5px solid #f38181;
@@ -351,6 +352,7 @@ body {
     .service-title-text {
         margin-bottom: 90px;
         color: #8f8f8f;
+        text-align: center;
         font-family: 'roboto', sans-serif;
     }
     .service-content {
@@ -363,13 +365,18 @@ body {
             width: 100%;
         }
         .text-content {
+            margin-top: 25px;
             display: inline-block;
             @media #{$desktop-up} {
                 width: 600px;
+                margin-top: 0;
             }
-    
             .text {
+                border-bottom: 1px solid white;
                 background-color: rgba(0, 0, 0, 0.1);
+            }
+            img {
+                padding-left: 20px;
             }
             h2 {
                 cursor: pointer;
@@ -379,6 +386,7 @@ body {
                 color: #333333;
                 font-family: 'montserratregular';
                 font-weight: bold;
+                display: inline-block;
             }
             p {
                 text-align: left;
@@ -386,7 +394,9 @@ body {
                 font-weight: light;
                 color: #8f8f8f;
                 overflow: auto;
-                height: 240px;                
+                border-top: 1px solid white;
+                height: 170px;
+                margin: 0;        
             }
         }
     }

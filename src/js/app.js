@@ -13,12 +13,26 @@ let swiper = new Swiper('.swiper-container', {
 $(()=> {
     const textContent = $(".text-content");
 
-    textContent.find("p").hide();
+    const photo = textContent.children()[0];
+    const photoPar = $(photo).find("p");
 
+    textContent.find("p").hide();
+ 
+    photoPar.show();
     textContent.find("h2").on("click", (e) => {;
 
-        $(e.target).next().toggle();
-        
+        $(e.target).next().show();
+
+        let firstPar = $(e.target).parent().siblings().children()[2];
+        let secondPar = $(e.target).parent().siblings().children()[5];
+
+        if (firstPar.style.display = "none") {
+            $(firstPar).hide()
+            $(secondPar).hide()
+        }
+
+
+
     })
 
 });
